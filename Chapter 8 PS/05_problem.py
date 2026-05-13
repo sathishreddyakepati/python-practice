@@ -1,0 +1,15 @@
+# 5. Write a python function to print first n lines of the following pattern: 
+# *** 
+# **               
+# * - for n = 3
+
+
+def printStars(n):
+    if(n==0):
+        return
+    print("*"*(n),end="")
+    print()
+    printStars(n-1)
+
+a = int(input("Enter the value of n: "))
+printStars(a)

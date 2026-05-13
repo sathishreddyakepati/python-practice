@@ -3,18 +3,31 @@
 # *   *   for n = 3 
 # * * * 
 
-n = int(input("Enter the number(n): "))
+# n = int(input("Enter the number(n): "))
 
+# for i in range(1,n+1):
+#     if (i==1 or i==n):
+#         for j in range(1,n+1):
+#             print("*",end="")
+#     else: 
+#         print("*",end="")
+#         for k in range(2,n):
+#             print(" ",end="")
+#         print("*",end="")
+#     print()
+
+n = int(input("Enter the number(n): "))
 for i in range(1,n+1):
-    if (i==1 or i==n):
-        for j in range(1,n+1):
-            print("*",end="")
-    else: 
+    if(i==1 or i==n):
+        print("*"*(n),end="")
+        print()
+    else:
         print("*",end="")
-        for k in range(2,n):
-            print(" ",end="")
+        print(" "*(n-2),end="")
         print("*",end="")
-    print()
+        print()
+    
+
     
 
 

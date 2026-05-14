@@ -15,21 +15,21 @@ you = youDict[youIn]
 print(f"You choose {reverseDict[you]} - Computer Choose {reverseDict[computer]}")
 if(computer == you):
     print("It's a Draw!")
-elif(-1<=you and you<=1):
+else:
     if(computer ==-1 and you ==1):
       print("You lose!")
     elif(computer ==-1 and you==0):
       print("You won!")
-    if(computer == 0 and you ==-1):
+    elif(computer == 0 and you ==-1):
       print("You lose!")
     elif(computer == 0 and you==1):
       print("You win!")
-    if(computer == 1 and you == -1):
+    elif(computer == 1 and you == -1):
       print("You win!")
     elif(computer== 1 and you== 0):
       print("You lose!")
-else:
-  print("Something went wrong!")
+    else:
+      print("Something went wrong!")
     
 
 
